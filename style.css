@@ -1,0 +1,297 @@
+/* Common styles */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    font-family: Helvetica;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header styles */
+  #header {
+    width: 100%;
+    height: 60px;
+    background-color: #f5bf7c;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    border-bottom: black solid;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  li {
+    display: block;
+  }
+  
+  nav a {
+    padding: 20px;
+  }
+  
+  nav a:hover {
+    background-color: #0000ff76;
+    color: white;
+  }
+  
+  /* Welcome-section styles */
+  #welcome-section {
+    height: 100vh;
+    background: linear-gradient(54deg, #191919, #000000cf);
+    font-family: "Raleway";
+  }
+  
+  #welcome-section h1 {
+    color: white;
+    margin: auto;
+    padding-top: 36vh;
+    text-align: center;
+    font-size: 6rem;
+  }
+  
+  #welcome-section p {
+    color: #f5bf7c;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  
+  /* Project-section styles */
+  #projects {
+    background-color: #45567d;
+    letter-spacing: 1px;
+    padding-bottom: 3rem;
+  }
+  
+  #project-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .title {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    font-size: 2.4rem;
+    padding-top: 5vh;
+    border-bottom: solid 0.2rem white;
+    margin: 0 30%;
+    margin-bottom: 3vh;
+    padding-bottom: 3px;
+  }
+  
+  #projects p {
+    background-color: #282e3c;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 0;
+  }
+  
+  #projects img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .project-tile {
+    width: 40%;
+    transition: transform 0.3s;
+    border: solid white;
+  }
+  
+  .project-tile:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Education-section styles */
+  #education {
+    background-color: #282e3c;
+    color: white;
+    padding: 5vh;
+  }
+  
+  #education h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+  }
+  
+  .education-item {
+    margin-bottom: 3vh;
+    text-align: center;
+  }
+  
+  .education-item h2 {
+    font-size: 1.5rem;
+    margin-top: 7vh;
+    margin-bottom: 1vh;
+  }
+  
+  .education-item p {
+    margin: 0.5vh 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  #education img {
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.1s;
+    filter: grayscale(30%);
+  }
+  
+  #img-1 {
+    width: 200px;
+  }
+  
+  #education img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+  }
+  
+  #img-2 {
+    width: 50%;
+    margin-top: 4vh;
+  }
+  
+  .logo {
+    margin-bottom: 1vh;
+  }
+  
+  .cis {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Contact-section styles */
+  #contact {
+    background-color: #000000;
+    color: white;
+    padding: 5vh;
+  }
+  
+  #contact h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  #contact .title {
+    margin-bottom: 0;
+    margin: 0 37%;
+  }
+  
+  #social-icons {
+    text-align: center;
+  }
+  
+  .fa {
+    padding: 0 3px;
+    transition: transform 0.3s;
+  }
+  
+  .fa:hover {
+    color: crimson;
+    transform: scale(1.3);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    #welcome-section h1 {
+      font-size: 4rem;
+      padding-top: 35vh;
+    }
+  
+    #welcome-section p {
+      font-size: 2rem;
+    }
+  
+    #projects {
+      padding-bottom: 2rem;
+    }
+  
+    #project-flex {
+      flex-direction: column;
+    }
+  
+    .title {
+      font-size: 2rem;
+      padding-top: 3vh;
+      margin: 0 10%;
+      margin-bottom: 2vh;
+    }
+  
+    #projects p {
+      font-size: 1.5rem;
+    }
+  
+    .project-tile {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+  
+    #education {
+      padding: 2vh;
+    }
+  
+    #education h1 {
+      font-size: 1.5rem;
+      margin-bottom: 2vh;
+    }
+  
+    .education-item h2 {
+      font-size: 1.2rem;
+      margin-top: 5vh;
+      margin-bottom: 0.5vh;
+    }
+  
+    .education-item p {
+      font-size: 0.9rem;
+    }
+  
+    #img-1 {
+      width: 150px;
+    }
+  
+    #img-2 {
+      margin-top: 3vh;
+    }
+  
+    #contact {
+      padding: 2vh;
+    }
+  
+    #contact h1 {
+      font-size: 1.5rem;
+      margin-bottom: 2vh;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  
