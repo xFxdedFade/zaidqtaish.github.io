@@ -168,7 +168,7 @@
     filter: grayscale(0);
   }
   
-  #img-2 {
+  .img-2 {
     width: 50%;
     margin-top: 4vh;
   }
@@ -277,7 +277,7 @@
       width: 150px;
     }
   
-    #img-2 {
+    .img-2 {
       margin-top: 3vh;
     }
   
