@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel='stylesheet' href='style.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
 </head>
 <body>
     <header id='header'>
@@ -24,25 +26,25 @@
           <h1>Hello, I am Zaid</h1>
           <p>a web developer</p>
         </section>
-      
+
         <section id='projects'>
           <h1 class='title' id='here'>Here are some of my projects</h1>
-          <div id='project-flex'>
-            <div class='project-tile'>
-              <a href='https://codepen.io/xFxdedFade/full/mdzGLoN'>
-                <img src='https://imgur.com/zTalqdB.png'>
-              </a>
-              <a href='https://codepen.io/xFxdedFade/full/mdzGLoN'>
-                <p>Advanced Programming Summary</p>
-              </a>
+          <div class='container'>
+            <div class='button-group'>
+              <a class='project-btn quote-btn' href='https://codepen.io/xFxdedFade/full/eYQwyEX' target='_blank'>Random Quote Machine</a>
+              <a class='project-btn timer-btn' href='https://codepen.io/xFxdedFade/full/oNJzMbd' target='_blank'>Pomodoro Timer</a>
+              <a class='project-btn drum-btn' href='https://codepen.io/xFxdedFade/full/zYyGEoJ' target='_blank'>Drum Machine</a>
+              <a class='project-btn candle-btn' href='https://codepen.io/xFxdedFade/full/GRYwQZa' target='_blank'>Product Landing Page</a>
+              <a class='project-btn cal-btn' href='https://codepen.io/xFxdedFade/full/mdaeaZv' target='_blank'>Javascript Calculator</a>
+              <a class='project-btn markdown-btn' href='https://codepen.io/xFxdedFade/full/OJrVxzb' target='_blank'>Markdown Previewer</a>
             </div>
-            <div class='project-tile'>
-              <a href='https://codepen.io/xFxdedFade/full/GRYwQZa'>
-                <img src='https://imgur.com/bCxjqhd.png'>
-              </a>
-              <a href='https://codepen.io/xFxdedFade/full/GRYwQZa'>
-                <p>Product Landing Page</p>
-              </a>
+            <div class='project-img-container'>
+              <img class='project-img quote-img' src="https://i.imgur.com/IRUXpak.png">
+              <img class='project-img timer-img' src="https://i.imgur.com/TslUckF.png">
+              <img class='project-img drum-img' src="https://i.imgur.com/cy1F7yM.png">
+              <img class='project-img candle-img' src="https://i.imgur.com/Cq9gWDf.png">
+              <img class='project-img cal-img' src="https://i.imgur.com/Uwd3scF.png">
+              <img class='project-img markdown-img' src="https://i.imgur.com/xJ3DzGh.png">
             </div>
           </div>
         </section>
@@ -50,13 +52,13 @@
         <section id='education'>
           <h1 class='title'>Education and Courses</h1>
           <div class="education-item">
-            <div class='logo'>
-              <a href='http://ju.edu.jo/'>
-                <img id='img-1' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/University_of_Jordan_Logo.svg/1200px-University_of_Jordan_Logo.svg.png'>
+            <div class='logo-container'>
+              <a href='http://ju.edu.jo/' target='_blank'>
+                <img id='logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/University_of_Jordan_Logo.svg/1200px-University_of_Jordan_Logo.svg.png'>
               </a>
             </div>
             <h2>University of Jordan</h2>
-            <p>Bachelor of Science in <span class='cis'>Computer Information Systems</span></p>
+            <p>Bachelor in <span class='cis'>Computer Information Systems</span></p>
             <p>I am currently pursuing my Bachelor's degree in
               <span class='cis'>Computer Information Systems</span>
               at the University of Jordan. I am acquiring a solid
@@ -66,18 +68,28 @@
             </p>
           </div>
           <hr />
+          <div class='education-flex'>
+            <div class='education-row'>
           <div class="education-item">
-            <h2>FreeCodeCamp Responsive Web Design Certification</h2>
-            <a href='http://freecodecamp.org/certification/ZaidQtaish/responsive-web-design'>
-              <img class='img-2' src='https://imgur.com/BecxPyS.png'>
+            <h2>Responsive Web Design Certification</h2>
+            <a href='http://freecodecamp.org/certification/ZaidQtaish/responsive-web-design' target='_blank'>
+              <img class='cert-img' src='https://i.imgur.com/iXGnkW4.png'>
             </a>
           </div>
           <div class="education-item">
-            <h2>FreeCodeCamp JavaScript Algorithms and Data Structures</h2>
-            <a href='https://freecodecamp.org/certification/ZaidQtaish/javascript-algorithms-and-data-structures'>
-              <img class='img-2' src='https://imgur.com/KBxDdY5.png'>
+            <h2>JavaScript DSA Certification</h2>
+            <a href='https://freecodecamp.org/certification/ZaidQtaish/javascript-algorithms-and-data-structures' target='_blank'>
+              <img class='cert-img' src='https://i.imgur.com/QY5hDn3.png'>
             </a>
           </div>
+          <div class="education-item">
+            <h2>Front End Libraries Certification</h2>
+            <a href='https://www.freecodecamp.org/certification/ZaidQtaish/front-end-development-libraries' target='_blank'>
+              <img class='cert-img' src='https://i.imgur.com/MIrdcod.png'>
+            </a>
+          </div>
+        </div>
+        </div>
         </section>
       
         </section>
@@ -104,8 +116,7 @@
           </div>
         </section>
       </main>
-      </body>
-      
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+    </body>
       </html>
-</body>
-</html>

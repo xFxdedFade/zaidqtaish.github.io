@@ -5,8 +5,10 @@
     }
   }
   body {
-    font-family: Helvetica;
+    font-family: "Helvetica";
     margin: 0;
+    padding: 0;
+    caret-color: transparent;
   }
   
   a {
@@ -18,40 +20,42 @@
   #header {
     width: 100%;
     height: 60px;
-    background-color: #f5bf7c;
+    background-color: #be3144;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
     overflow: hidden;
     z-index: 2;
-    border-bottom: black solid;
+    border-bottom: rgb(57, 57, 57) solid 1px;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
   }
   
   ul {
     display: flex;
+    align-items: center;
   }
   
   li {
     display: block;
+    padding-top: 6px;
   }
   
   nav a {
     padding: 20px;
+    text-decoration: none;
+    color: #fff;
   }
   
   nav a:hover {
-    background-color: #0000ff76;
+    background-color: #45567dbb;
     color: white;
   }
   
   /* Welcome-section styles */
   #welcome-section {
     height: 100vh;
-    background: linear-gradient(54deg, #191919, #000000cf);
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     font-family: "Raleway";
   }
   
@@ -64,7 +68,7 @@
   }
   
   #welcome-section p {
-    color: #f5bf7c;
+    color: #be3144;
     text-align: center;
     font-size: 3rem;
     margin-top: 0;
@@ -72,16 +76,9 @@
   
   /* Project-section styles */
   #projects {
-    background-color: #45567d;
+    background-color: #495159;
     letter-spacing: 1px;
     padding-bottom: 3rem;
-  }
-  
-  #project-flex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
   }
   
   .title {
@@ -90,43 +87,71 @@
     text-align: center;
     font-size: 2.4rem;
     padding-top: 5vh;
-    border-bottom: solid 0.2rem white;
+    border-bottom: solid 2px white;
     margin: 0 30%;
-    margin-bottom: 3vh;
+    margin-bottom: 8vh;
     padding-bottom: 3px;
   }
-  
-  #projects p {
-    background-color: #282e3c;
-    width: 100%;
-    margin: 0;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-group{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
+  }
+
+  .project-btn{
+    margin: 10px 0px 3px 10px;
+    background-color: #00000077;
+    border: solid 1px white;
     color: white;
-    font-size: 1.5rem;
-    padding: 5px 0;
+    font-size: 27px;
+    padding: 5px 0px;
+    text-decoration: none;
   }
-  
-  #projects img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+
+  .project-btn:hover{
+    color: #be3144;
   }
-  
-  .project-tile {
-    width: 40%;
-    transition: transform 0.3s;
-    border: solid white;
+
+  .project-img-container{
+    width: 50.5vw;
+    height: 25vw;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
   }
-  
-  .project-tile:hover {
-    transform: scale(1.1);
+
+  .project-img{
+    opacity: 0;
+    width: 50vw;
+    border-radius: 8px;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
   }
-  
+
   /* Education-section styles */
   #education {
     background-color: #282e3c;
     color: white;
     padding: 5vh;
+  }
+
+  .education-row{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .education-flex{
+    display: flex;
+    flex-direction: column;
   }
   
   #education h1 {
@@ -156,11 +181,11 @@
     text-align: center;
     display: inline-block;
     transition: transform 0.1s;
-    filter: grayscale(30%);
   }
   
-  #img-1 {
+  #logo {
     width: 200px;
+    filter: grayscale(30%);
   }
   
   #education img:hover {
@@ -168,12 +193,7 @@
     filter: grayscale(0);
   }
   
-  .img-2 {
-    width: 50%;
-    margin-top: 4vh;
-  }
-  
-  .logo {
+  .logo-container {
     margin-bottom: 1vh;
   }
   
@@ -181,28 +201,35 @@
     color: green;
     font-weight: bold;
   }
+
+  .cert-img{
+    max-width: 30vw;
+    margin-top: 15px;
+  }
   
   /* Contact-section styles */
   #contact {
     background-color: #000000;
     color: white;
-    padding: 5vh;
+    padding-bottom: 4vh;
   }
   
   #contact h1 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 3vh;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    margin: 0 37%;
+  }
+
+  #contact a{
+    text-decoration: none;
+    color: white;
   }
   
   p {
     text-align: center;
     font-size: 1.2rem;
-  }
-  
-  #contact .title {
-    margin-bottom: 0;
-    margin: 0 37%;
+    padding-top: 1vh;
   }
   
   #social-icons {
@@ -212,6 +239,7 @@
   .fa {
     padding: 0 3px;
     transition: transform 0.3s;
+    margin: 0 3px;
   }
   
   .fa:hover {
@@ -249,11 +277,6 @@
       font-size: 1.5rem;
     }
   
-    .project-tile {
-      width: 90%;
-      margin-bottom: 30px;
-    }
-  
     #education {
       padding: 2vh;
     }
@@ -272,13 +295,18 @@
     .education-item p {
       font-size: 0.9rem;
     }
+
+    .education-row{
+      flex-direction: column;
+    }
   
-    #img-1 {
+    #logo {
       width: 150px;
     }
   
-    .img-2 {
+    .cert-img {
       margin-top: 3vh;
+      width: 40vw;
     }
   
     #contact {
