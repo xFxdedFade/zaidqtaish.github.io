@@ -203,8 +203,13 @@
   }
 
   .cert-img{
-    max-width: 30vw;
+    max-width: 40vw;
     margin-top: 15px;
+  }
+
+  #courses-title{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
   }
   
   /* Contact-section styles */

@@ -68,6 +68,7 @@
             </p>
           </div>
           <hr />
+          <h2 id='courses-title' class='title'>Courses</h2>
           <div class='education-flex'>
             <div class='education-row'>
           <div class="education-item">
@@ -82,10 +83,18 @@
               <img class='cert-img' src='https://i.imgur.com/QY5hDn3.png'>
             </a>
           </div>
+        </div>
+        <div class='education-row'>
           <div class="education-item">
             <h2>Front End Libraries Certification</h2>
             <a href='https://www.freecodecamp.org/certification/ZaidQtaish/front-end-development-libraries' target='_blank'>
               <img class='cert-img' src='https://i.imgur.com/MIrdcod.png'>
+            </a>
+          </div>
+          <div class="education-item">
+            <h2>Data Visualization Certification</h2>
+            <a href='https://www.freecodecamp.org/certification/ZaidQtaish/data-visualization' target='_blank'>
+              <img class='cert-img' src='https://i.imgur.com/OvHuqkk.png'>
             </a>
           </div>
         </div>
@@ -117,6 +126,20 @@
         </section>
       </main>
       <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-      <script src="script.js"></script>
+      
+      <script>
+        $(document).ready(function () {
+    $('.project-btn').hover(
+        function () {
+            var index = $('.project-btn').index(this);
+            $('.project-img').eq(index).css('opacity', '1');
+        },
+        function () {
+            var index = $('.project-btn').index(this);
+            $('.project-img').eq(index).css('opacity', '0');
+        }
+    );
+});
+      </script>
     </body>
       </html>
